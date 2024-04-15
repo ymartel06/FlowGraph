@@ -58,7 +58,10 @@ private:
 	void BuildDiffSourceArray();
 
 	class SFlowDiff* DiffWidget;
+	
+	UPROPERTY(Transient)
 	UEdGraph* GraphOld;
+	UPROPERTY(Transient)
 	UEdGraph* GraphNew;
 
 	/** Description of Old and new graph */

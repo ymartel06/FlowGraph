@@ -37,6 +37,7 @@ public:
 	
 protected:
 	/** The Flow Asset being edited */
+	UPROPERTY(Transient)
 	TObjectPtr<UFlowAsset> FlowAsset;
 
 	TSharedPtr<class FFlowAssetToolbar> AssetToolbar;

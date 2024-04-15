@@ -67,5 +67,6 @@ private:
 	static int32 ValidPinsCount(const TArray<FFlowPin>& Pins);
 
 protected:
+	UPROPERTY(Transient)
 	UFlowGraphNode* FlowGraphNode = nullptr;
 };
